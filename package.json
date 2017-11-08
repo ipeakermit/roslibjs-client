@@ -1,0 +1,33 @@
+{
+  "name": "roslibjs-client",
+  "version": "0.0.1",
+  "description": "A wrapper for roslibjs that easier to use",
+  "author": "Oleg Apostol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apostololeg/roslibjs-client/issues"
+  },
+  "browser": "src/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "tests": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apostololeg/roslibjs-client.git"
+  },
+  "keywords": [
+    "roslibjs",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/apostololeg/roslibjs-client#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "roslib": "git+https://github.com/RobotWebTools/roslibjs.git#develop",
+    "webpack": "^3.8.1",
+    "wolfy87-eventemitter": "git+https://github.com/Olical/EventEmitter.git"
+  }
+}
