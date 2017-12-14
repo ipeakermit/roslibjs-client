@@ -28,8 +28,6 @@ class Topic {
         this._client.on(EVENT_DISCONNECTED, this._onDisconnect)
 
         return {
-            // listener = topic.subscribe(hander)
-            // listener.dispose()
             subscribe(handler) {
                 handlers.push(handler)
                 subscribe()
@@ -37,6 +35,8 @@ class Topic {
                 return {
                     dispose() {
                         let index = handlers.indexOf(handler)
+
+                        instance.unsubscribe()
 
                         if (index !== -1) {
                             handlers.splice(index, 1)
