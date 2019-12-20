@@ -1,8 +1,8 @@
-import ROSLIB from 'roslib'
-import EventEmitter from 'wolfy87-eventemitter'
-import Connection from './Connection.js'
-import Topic from './Topic.js'
-import Service from './Service.js'
+var ROSLIB = require('roslib')
+var EventEmitter = require('wolfy87-eventemitter')
+var Connection = require('./Connection.js')
+var Topic = require('./Topic.js')
+var Service = require('./Service.js')
 
 const defaultOptions = {
     url: 'ws://localhost:9090',
@@ -27,4 +27,4 @@ class Client extends EventEmitter {
     }
 }
 
-export default Client
+module.exports = Client

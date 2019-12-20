@@ -1,4 +1,4 @@
-import ROSLIB from 'roslib'
+var ROSLIB = require('roslib')
 
 class Service {
     constructor(client, opts, payload) {
@@ -10,4 +10,4 @@ class Service {
     }
 }
 
-export default Service
+module.exports = Service

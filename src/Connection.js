@@ -1,7 +1,7 @@
-import ROSLIB from 'roslib'
-import {
-    EVENT_CONNECTED,
-    EVENT_DISCONNECTED } from './Constants.js'
+var ROSLIB = require('roslib')
+var constants = require('./Constants.js')
+var EVENT_CONNECTED = constants.EVENT_CONNECTED;
+var EVENT_DISCONNECTED = constants.EVENT_DISCONNECTED;
 
 class Connection {
     constructor(client, opts) {
@@ -56,4 +56,4 @@ class Connection {
     }
 }
 
-export default Connection
+module.exports = Connection
